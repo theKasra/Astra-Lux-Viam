@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7936098690341179180}
   - component: {fileID: 2834239655216107987}
   - component: {fileID: 1028239627610608915}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Thebes
   m_TagString: Untagged
   m_Icon: {fileID: 0}

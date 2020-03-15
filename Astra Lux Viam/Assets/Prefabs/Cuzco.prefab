@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1422503169911821021}
   - component: {fileID: 9221883991060123047}
   - component: {fileID: -510028768982947223}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cuzco
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1422503169911821021}
   - component: {fileID: 9221883991060123047}
   - component: {fileID: -510028768982947223}
+  - component: {fileID: -7093678879215936948}
+  - component: {fileID: 4536314448838529410}
   m_Layer: 9
   m_Name: Cuzco
   m_TagString: Untagged
@@ -108,16 +110,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c977d4c798591b9478794c1f05228c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 200
   shotCounter: 0
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 3
   projectile: {fileID: 3187463453595914208, guid: 6b100239a1e54b144997f4865e0f6364,
     type: 3}
-  projectileSpeed: 10
+  projectileSpeed: 13
   deathVFX: {fileID: 5511996510996709214, guid: 996255bb83a2b1640957f025bc807700,
     type: 3}
   durationOfExplosion: 1
+  deathSound: {fileID: 8300000, guid: edacec3b74245584ab2c31314231f01b, type: 3}
+  deathSoundVolume: 0.7
+  shootSound: {fileID: 8300000, guid: b039a5bef3e6de1448367a59676ad798, type: 3}
+  shootSoundVolume: 0.25
 --- !u!58 &-510028768982947223
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134,3 +140,37 @@ CircleCollider2D:
   m_Offset: {x: 0.0056758523, y: 0.0056784153}
   serializedVersion: 2
   m_Radius: 0.43959832
+--- !u!50 &-7093678879215936948
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4175403283686769153}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &4536314448838529410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4175403283686769153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de6693eee5eb9724d94fab337a27a0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 200

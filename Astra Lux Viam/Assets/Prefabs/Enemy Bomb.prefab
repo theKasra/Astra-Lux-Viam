@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 2669277877016295184}
   - component: {fileID: 6061121523411335157}
   - component: {fileID: 2163367184629749857}
+  - component: {fileID: 8440346518061630212}
   m_Layer: 11
-  m_Name: Enemy Laser
+  m_Name: Enemy Bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,8 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 485031417
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7dfd25249a426c9409a944e8f974930c, type: 3}
-  m_Color: {r: 1, g: 0.47123432, b: 0.33490568, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3315a4e82e6679c429ea9533cb9206cd, type: 3}
+  m_Color: {r: 1, g: 0.2216981, b: 0.3499958, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -96,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de6693eee5eb9724d94fab337a27a0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
+  damage: 120
 --- !u!50 &6061121523411335157
 Rigidbody2D:
   serializedVersion: 4
@@ -134,3 +135,16 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.21666667, y: 0.6166667}
   m_Direction: 0
+--- !u!114 &8440346518061630212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3187463453595914208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2c95cbd9e337f458a17041252edc85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedOfSpin: 720
